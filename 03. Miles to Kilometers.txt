@@ -1,0 +1,15 @@
+using System;
+
+namespace Demo18._09
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double mile = double.Parse(Console.ReadLine());
+           
+            Console.WriteLine($"{mile * 1.60934:F2}");
+
+        }
+    }
+}

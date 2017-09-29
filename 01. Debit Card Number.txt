@@ -1,0 +1,18 @@
+using System;
+
+namespace Demo18._09
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int firstDigits = int.Parse(Console.ReadLine());
+            int secondDigits = int.Parse(Console.ReadLine());
+            int thirdDigits = int.Parse(Console.ReadLine());
+            int fourthDigits = int.Parse(Console.ReadLine());
+
+            Console.WriteLine($"{firstDigits:D4} {secondDigits:D4} {thirdDigits:D4} {fourthDigits:D4}");
+
+        }
+    }
+}

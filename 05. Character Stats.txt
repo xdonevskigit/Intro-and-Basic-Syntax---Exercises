@@ -1,0 +1,29 @@
+using System;
+
+namespace Demo18._09
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name = Console.ReadLine();
+            int currentHealth = int.Parse(Console.ReadLine());
+            int maxHealth = int.Parse(Console.ReadLine());
+            int currentEnergy = int.Parse(Console.ReadLine());
+            int maxEnergy = int.Parse(Console.ReadLine());
+
+            char line = '|';
+            char dot = '.';
+
+            string healthPoint = new string(line, currentHealth);
+            string healthTaken = new string(dot, maxHealth - currentHealth);
+            string energyPoint = new string(line, currentEnergy);
+            string energyTaken = new string(dot, maxEnergy - currentEnergy);
+
+            Console.WriteLine("Name: " + name);
+            Console.WriteLine("Health: |" + healthPoint + healthTaken + "|");
+            Console.WriteLine("Energy: |" + energyPoint + energyTaken + "|");
+
+        }
+    }
+}
